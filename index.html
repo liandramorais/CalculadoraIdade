@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Calculadora de Idade</h1>
+        <section>
+            <h2>Cadastro de informações</h2>
+            <form method="post">
+                <div class="campo-form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="campo-nome" id="nome" placeholder="Insira seu nome completo" >
+                </div>
+
+                <div class="campo-form">
+                    <label for="dia-nascimento">Data de nascimento:</label>
+                    <div class="grupo-data-nascimento">
+                        <input type="number" name="campo-dia-nascimento" id="dia-nascimento" placeholder="Dia">
+                        <input type="number" name="campo-mês-nascimento" id="mes-nascimento" placeholder="Mês">
+                        <input type="number" name="campo-ano-nascimento" id="ano-nascimento" placeholder="Ano">
+                    </div>
+                </div>                
+
+                <div class="conjunto-botoes">
+                    <button type="reset">Limpar Formulário</button>
+                    <button type="submit">Calcular</button>
+                </div>
+
+            </form>
+        </section>
+        <section>
+            <h2>Pessoas Cadastradas</h2>
+            <table>
+                <caption>Tabela de Pessoas</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data de nascimento</th>
+                        <th>Idade</th>
+                        <th>Faixa etária</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+                    <tr>
+                        <td data-cell="nome">Thiago Nascimento</td>
+                        <td data-cell="data de nascimento">28/06/1998</td>
+                        <td data-cell="idade">25 anos</td>
+                        <td data-cell="faixa etária">21.1</td>
+                    </tr>                    
+                </tbody>
+            </table>
+            <button class="botao-tabela">Limpar Registros</button>
+        </section>
+    </main>
+</body>
+
+</html>
